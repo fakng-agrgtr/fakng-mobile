@@ -1,6 +1,6 @@
 import 'package:cupertino_back_gesture/cupertino_back_gesture.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:fakng_mobile/features/vacancies/presentation/pages/vacancies_screen.dart';
+import 'package:fakng_mobile/features/vacancies/presentation/pages/vacancies_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -42,7 +42,7 @@ class App extends StatelessWidget {
       GoRoute(
         path: '/',
         builder: (context, state) {
-          return const VacanciesScreen();
+          return const VacanciesPage();
         },
       ),
     ],

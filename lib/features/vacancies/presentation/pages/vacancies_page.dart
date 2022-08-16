@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class VacanciesScreen extends StatelessWidget {
-  const VacanciesScreen({Key? key}) : super(key: key);
+class VacanciesPage extends StatelessWidget {
+  const VacanciesPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
