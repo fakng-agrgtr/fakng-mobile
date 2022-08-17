@@ -11,9 +11,7 @@ class SettingsBloc extends Bloc<SettingsEvent, SettingsState> {
 
   SettingsBloc({
     required this.settingsRepository,
-  }) : super(_Initial()) {
-    on<SettingsEvent>((event, emit) {
-      // TODO: implement event handler
-    });
+  }) : super(const _Initial()) {
+    on<SettingsEvent>((event, emit) {});
   }
 }

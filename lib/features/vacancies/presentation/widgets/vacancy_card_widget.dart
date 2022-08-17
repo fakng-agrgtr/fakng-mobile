@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class VacancyCardWidget extends StatelessWidget {
   const VacancyCardWidget({Key? key}) : super(key: key);
@@ -35,28 +32,28 @@ class VacancyCardWidget extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      '250K \$ / year',
+                      r'250K $ / year',
                     ),
                   ],
                 ),
                 IconButton(
                   padding: EdgeInsets.zero,
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     size: 25,
                     Icons.favorite_border,
                   ),
                 )
               ],
             ),
-            Text(
+            const Text(
               'Apple',
               style: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 15,
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             RichText(
               text: TextSpan(
                 style: DefaultTextStyle.of(context).style,
@@ -70,7 +67,7 @@ class VacancyCardWidget extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 3),
+            const SizedBox(height: 3),
             RichText(
               text: TextSpan(
                 style: DefaultTextStyle.of(context).style,

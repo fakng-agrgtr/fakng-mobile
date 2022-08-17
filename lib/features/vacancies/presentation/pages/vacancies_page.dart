@@ -26,7 +26,7 @@ class VacanciesPage extends StatelessWidget {
           const SizedBox(height: 10),
           ListView.builder(
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) => const VacancyCardWidget(),
             itemCount: 10,
           ),
