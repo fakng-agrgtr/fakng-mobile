@@ -10,27 +10,34 @@ class VacanciesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Vacancies'),
-      ),
-      body: ListView(
+      body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
-        physics: const BouncingScrollPhysics(),
-        children: [
-          const SizedBox(height: 10),
-          SearchWidget(
-            onSubmit: () {},
-          ),
-          const SizedBox(height: 10),
-          const TagsWidget(),
-          const SizedBox(height: 10),
-          ListView.builder(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            itemBuilder: (context, index) => const VacancyCardWidget(),
-            itemCount: 10,
-          ),
-        ],
+        child: ListView(
+          shrinkWrap: true,
+          physics: const BouncingScrollPhysics(),
+          children: [
+            const SizedBox(height: 30),
+            SearchWidget(
+              onSubmit: () {},
+            ),
+            const SizedBox(height: 10),
+            const TagsWidget(),
+            const SizedBox(height: 30),
+            const Text(
+              'Vacancies',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            ListView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemBuilder: (context, index) => const VacancyCardWidget(),
+              itemCount: 10,
+            ),
+          ],
+        ),
       ),
       bottomNavigationBar: const NavbarWidget(selectedIndex: 0),
     );
