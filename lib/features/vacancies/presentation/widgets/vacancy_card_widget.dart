@@ -6,12 +6,6 @@ class VacancyCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      // height: 100,
-      // decoration: BoxDecoration(
-      //   borderRadius: BorderRadius.all(
-      //     Radius.circular(20),
-      //   ),
-      // ),
       child: Container(
         padding: const EdgeInsets.all(12),
         child: Column(
@@ -39,7 +33,7 @@ class VacancyCardWidget extends StatelessWidget {
                 IconButton(
                   padding: EdgeInsets.zero,
                   onPressed: () {},
-                  icon: const Icon(
+                  icon: Icon(
                     size: 25,
                     Icons.favorite_border,
                   ),

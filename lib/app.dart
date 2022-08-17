@@ -23,7 +23,7 @@ class App extends StatelessWidget {
         routeInformationParser: _router.routeInformationParser,
         routerDelegate: _router.routerDelegate,
         theme: ThemeData(
-          backgroundColor: const Color.fromARGB(255, 247, 247, 247),
+          backgroundColor: Color.fromARGB(255, 245, 245, 245),
           // scaffoldBackgroundColor: Color.fromARGB(255, 247, 247, 247),
           primarySwatch: Colors.blue,
           cardTheme: CardTheme(

@@ -10,17 +10,17 @@ class TagsWidget extends StatefulWidget {
 class _TagsWidgetState extends State<TagsWidget> {
   int selectedItem = 0;
 
+  final list = [
+    'Apple',
+    'Uber',
+    'Amazon',
+    'Google',
+    'Netflix',
+    'Facebook',
+  ];
+
   @override
   Widget build(BuildContext context) {
-    final list = [
-      'Apple',
-      'Uber',
-      'Amazon',
-      'Google',
-      'Netflix',
-      'Facebook',
-    ];
-
     return SizedBox(
       height: 30,
       child: ListView.builder(
