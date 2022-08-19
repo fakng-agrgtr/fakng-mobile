@@ -67,7 +67,6 @@ class _TagWidget extends StatelessWidget {
       highlightColor: Colors.transparent,
       child: Card(
         elevation: 0,
-        color: Colors.white,
         margin: const EdgeInsets.only(right: 15),
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 20),
