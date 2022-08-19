@@ -1,4 +1,4 @@
-import 'package:fakng_mobile/app.dart';
+import 'package:fakng_mobile/core/domain/router/routes_names.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
