@@ -14,22 +14,6 @@ class DBClient {
   Future<Box<List<VacancyModel>>> openVacanciesBox() async =>
       _openBox<List<VacancyModel>>(name: DBKeys.vacancies, typeID: 0);
 
-  Future<void> closeBox<T>(Box<T> box) async {
-    if (!box.isOpen) {
-      _boxCounter.remove(box.name);
-      return;
-    }
-
-    var count = _boxCounter[box.name] ?? 1;
-    count -= 1;
-    _boxCounter[box.name] = count;
-    if (count > 0) return;
-
-    _boxCounter.remove(box.name);
-    await box.compact();
-    await box.close();
-  }
-
   Future<T?> get<T>({
     required Box<T> box,
     required String key,

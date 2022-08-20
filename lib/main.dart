@@ -7,7 +7,7 @@ void main() async {
   await di.init();
 
   runApp(EasyLocalization(
-    supportedLocales: const [Locale('en'), Locale('ru'), Locale('ar', 'AE')],
+    supportedLocales: const [Locale('en'), Locale('ru')],
     path: 'assets/translations',
     fallbackLocale: const Locale('en', 'US'),
     startLocale: const Locale('en'),

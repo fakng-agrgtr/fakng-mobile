@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 
-class HttpClient {
+class NetworkClient {
   late final Dio _client;
 
-  HttpClient() {
+  NetworkClient() {
     _client = Dio();
     _client.interceptors
         .add(LogInterceptor(responseBody: true, requestBody: true));

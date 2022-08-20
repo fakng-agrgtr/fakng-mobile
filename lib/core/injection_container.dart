@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:fakng_mobile/core/data/db/db_client.dart';
-import 'package:fakng_mobile/core/data/network/http_client.dart';
+import 'package:fakng_mobile/core/data/network/network_client.dart';
 import 'package:fakng_mobile/core/domain/router/router.dart';
 import 'package:fakng_mobile/features/favorites/data/repositories/favorites_repository.dart';
 import 'package:fakng_mobile/features/settings/data/repositories/settings_repository.dart';
@@ -27,7 +27,7 @@ Future<void> init() async {
     ..registerFactory(SettingsRepository.new)
 
     // Components
-    ..registerSingleton(HttpClient())
+    ..registerSingleton(NetworkClient())
     ..registerSingleton(DBClient())
     ..registerSingleton(AppRouter());
 }
