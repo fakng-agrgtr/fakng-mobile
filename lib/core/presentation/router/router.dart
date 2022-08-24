@@ -1,9 +1,6 @@
-import 'package:fakng_mobile/core/domain/router/routes_names.dart';
-import 'package:fakng_mobile/features/favorites/presentation/bloc/favorites_bloc.dart';
+import 'package:fakng_mobile/core/presentation/router/routes_names.dart';
 import 'package:fakng_mobile/features/favorites/presentation/pages/favorites_page.dart';
-import 'package:fakng_mobile/features/settings/presentation/bloc/settings_bloc.dart';
 import 'package:fakng_mobile/features/settings/presentation/pages/settings_page.dart';
-import 'package:fakng_mobile/features/vacancies/presentation/bloc/vacancies_bloc.dart';
 import 'package:fakng_mobile/features/vacancies/presentation/pages/vacancies_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
