@@ -4,7 +4,6 @@ class NetworkConnectivity {
   const NetworkConnectivity();
 
   Future<bool> get status async {
-    return !(await Connectivity().checkConnectivity() ==
-        ConnectivityResult.none);
+    return await Connectivity().checkConnectivity() != ConnectivityResult.none;
   }
 }

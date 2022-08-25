@@ -33,7 +33,7 @@ class NavbarWidget extends StatelessWidget {
             default:
           }
 
-          if (route != null) GoRouter.of(context).go(route);
+          if (route != null) context.pushNamed(route);
         },
         items: const [
           BottomNavigationBarItem(

@@ -5,6 +5,9 @@ final lightAppTheme = ThemeData(
   brightness: Brightness.light,
   backgroundColor: const Color.fromARGB(255, 245, 245, 245),
   primarySwatch: Colors.blue,
+  textTheme: const TextTheme(
+    bodyText2: TextStyle(color: Colors.black),
+  ),
   cardTheme: CardTheme(
     elevation: 0,
     shape: RoundedRectangleBorder(
